@@ -1,0 +1,17 @@
+# NVIDIA Inference Configuration
+model:
+  name: "SolarCNN_v1"
+  num_classes: 6
+  input_size: [3, 224, 224]
+
+optimization:
+  precision: "fp16" # Options: "fp32", "fp16"
+  use_tensorrt: True
+  batch_size: 1
+
+hardware:
+  device: "cuda"
+  sync_gpu: True # Standard for NVIDIA profiling
+
+logging:
+  export_path: "/content/solar-defect-engine/solar_model.onnx"

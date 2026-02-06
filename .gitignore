@@ -1,0 +1,25 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+requirements.txt.bak
+
+# Hydra / Logs
+outputs/
+multirun/
+
+# Weights & Data (NVIDIA best practice: don't store large blobs in Git)
+*.pth
+*.onnx
+data/*
+!data/.gitkeep
+
+# IDEs
+.vscode/
+.idea/

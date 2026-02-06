@@ -45,8 +45,10 @@ To test the model logic with a specific image:
 # Place your image at the root as 'test_solar.jpg'
 ```
 python scripts/test_inference.py
-📂 Repository Structure
-Plaintext
+```
+
+#### 📂 Repository Structure
+```
 solar-defect-engine/
 ├── conf/                # Hydra YAML configurations
 ├── core/                # Model architecture & logic
@@ -61,19 +63,3 @@ solar-defect-engine/
 #### Vinay Kumar Yadi Senior Software Engineer (Tesla) | NVIDIA Certified Professional
 
 
-
-
----
-
-### **3. Final Push to GitHub**
-Now, run these commands in your terminal to sync everything for the last time:
-
-```bash
-# Add the new .gitignore and update the README
-git add .gitignore README.md
-
-# Commit
-git commit -m "docs: finalize README with usage guide and add .gitignore"
-
-# Push
-git push origin main

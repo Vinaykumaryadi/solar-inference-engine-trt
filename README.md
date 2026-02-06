@@ -42,7 +42,7 @@ python scripts/benchmark_trt.py
 To test the model logic with a specific image:
 
 
-# Place your image at the root as 'test_solar.jpg'
+Place your image at the root as 'test_solar.jpg'
 ```
 python scripts/test_inference.py
 ```

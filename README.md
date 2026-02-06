@@ -10,14 +10,14 @@ This project transitions a research-grade Solar Panel defect classification mode
 
 
 ### 🛠️ Senior DL Engineering Highlights
-* [cite_start]**Modular Architecture**: Refactored monolithic scripts into a structured Python package (`core/` module) to support maintainability and scalability.
-* [cite_start]**Decoupled Configuration**: Utilized **Hydra** for a dedicated `conf/` layer, enabling seamless environment-specific tuning across different GPU clusters without code changes.
-* [cite_start]**Optimization**: Implemented **FP16 Mixed Precision** and **Adaptive Pooling** to maximize GPU kernel occupancy and reduce memory footprint.
-* [cite_start]**Deployment Pipeline**: Supports **ONNX** export with dynamic batching, prepared for high-scale deployment via **NVIDIA Triton Inference Server** or **TensorRT**.
-* [cite_start]**Hardware Profiling**: Benchmarked using **CUDA-synchronization** (`torch.cuda.synchronize()`) to capture accurate, professional-level hardware latency.
+* **Modular Architecture**: Refactored monolithic scripts into a structured Python package (`core/` module) to support maintainability and scalability.
+* **Decoupled Configuration**: Utilized **Hydra** for a dedicated `conf/` layer, enabling seamless environment-specific tuning across different GPU clusters without code changes.
+* **Optimization**: Implemented **FP16 Mixed Precision** and **Adaptive Pooling** to maximize GPU kernel occupancy and reduce memory footprint.
+* **Deployment Pipeline**: Supports **ONNX** export with dynamic batching, prepared for high-scale deployment via **NVIDIA Triton Inference Server** or **TensorRT**.
+* **Hardware Profiling**: Benchmarked using **CUDA-synchronization** (`torch.cuda.synchronize()`) to capture accurate, professional-level hardware latency.
 
 ### 📊 Performance Results (Tesla T4 GPU)
-[cite_start]*Captured using Python-based profiling tools on NVIDIA hardware[cite: 1, 2].*
+*Captured using Python-based profiling tools on NVIDIA hardware[cite: 1, 2].*
 
 | Optimization | Latency (ms) | Throughput (FPS) | Precision |
 | :--- | :--- | :--- | :--- |
